@@ -9,17 +9,19 @@ import org.openqa.selenium.support.PageFactory;
 
 public class EbayHome_Elements {
 	
-	WebDriver driver;
+	WebDriver driver; //Instance variables
 
-	@FindBy(linkText = "Advanced") public WebElement advancedLink;
+	@FindBy(linkText = "Advanced") public WebElement advancedLink; //NULL
 	@FindBy(xpath = "//input[@id='gh-ac']") public WebElement searchBox;
 	@FindBy(xpath = "//input[@id='gh-btn']") public WebElement searchButton;
 	@FindBy(css = "h1.srp-controls__count-heading>span.BOLD:first-child") public WebElement numOfItems;
 	@FindBy(xpath = "//select[@id='gh-cat']/option']") public List<WebElement> catOptions;
 	
-	public EbayHome_Elements(WebDriver driver) {
+	public EbayHome_Elements(WebDriver driver) {//local variables
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
+	
+	
 	
 }

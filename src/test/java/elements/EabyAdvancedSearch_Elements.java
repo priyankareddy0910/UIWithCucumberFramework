@@ -22,3 +22,6 @@ public class EabyAdvancedSearch_Elements {
 	}
 	
 }
+
+// @FindBy -- Lazy proxy 
+

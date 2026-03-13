@@ -68,7 +68,7 @@ public class EbayHome_Steps {
 	@When("I click on {string}")
 	public void i_click_on(String string) throws Exception {
 	   ebayhome_actions.clickOnLinkByText(string);
-	   Thread.sleep(1000);
+	   Thread.sleep(8000);
 	}
 
 	@Then("I validate that page navigates to {string} and title contains {string}")
@@ -81,5 +81,7 @@ public class EbayHome_Steps {
 	    if (!actTitle.contains(title)) {
 	    	fail("Title mismatch");
 	    }
+	    
+	    	
 	}
 }
